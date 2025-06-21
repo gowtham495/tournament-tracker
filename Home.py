@@ -3,10 +3,19 @@ from datetime import date, datetime
 from utils import load_data
 
 
-st.set_page_config(page_title="SWE4 Tournament Tracker", layout="wide")
-
-st.title("Welcome to Carrom Tournament! ⛀⛁")
+st.set_page_config(
+    page_title="SWE4 Tournament Tracker",
+    layout="wide"
+)
+MAIN_LOGO_URL="images/main-logo.jpg"
+SMALL_LOGO_URL="images/small-logo.jpeg"
+st.logo(
+    MAIN_LOGO_URL,
+    icon_image=SMALL_LOGO_URL,
+    size="large"
+)
 st.image("images/carrom-board.jpg", use_container_width=False)
+st.title("Welcome to Carrom Tournament! ⛀⛁")
 st.sidebar.success("")
 st.markdown("""
 This app helps track match results, schedule games, and view the leaderboard — all in one place.
