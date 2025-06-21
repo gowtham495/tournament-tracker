@@ -12,8 +12,14 @@ st.title("📋 Matches Summary")
 
 if data["matches"]:
     match_df = pd.DataFrame(data["matches"])
-    st.dataframe(match_df, use_container_width=True)
 
+    # Add Serial Number column
+    match_df.insert(0, "Match #", range(1, len(match_df) + 1))
+
+    # Display without index
+    st.dataframe(match_df, use_container_width=True, hide_index=True)
+
+    # Download without index
     csv = match_df.to_csv(index=False).encode('utf-8')
     st.download_button("📥 Download Match Data", csv, "carrom_matches.csv", "text/csv")
 else:

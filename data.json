@@ -77,28 +77,20 @@
     ],
     "matches": [
         {
-            "date": "2025-06-21",
+            "date": "",
             "team1": "Team Alpha",
-            "team2": "Team Beta",
-            "team1_points": 21,
-            "team2_points": 17,
-            "winner": "Team Alpha"
-        },
-        {
-            "date": "2025-06-22",
-            "team1": "Team Alpha",
-            "team2": "Team Delta",
-            "team1_points": 15,
-            "team2_points": 9,
-            "winner": "Team Omega"
-        },
-        {
-            "date": "2025-06-23",
-            "team1": "Team Gamma",
             "team2": "Team Sigma",
-            "team1_points": 10,
-            "team2_points": 12,
-            "winner": "Team Sigma"
+            "team1_points": "",
+            "team2_points": "",
+            "winner": ""
+        },
+        {
+            "date": "",
+            "team1": "Team Beta",
+            "team2": "Team Gamma",
+            "team1_points": "",
+            "team2_points": "",
+            "winner": ""
         }
     ],
     "tournament": {
