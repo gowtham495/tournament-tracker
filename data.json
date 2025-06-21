@@ -1,0 +1,109 @@
+{
+    "players": [
+        "Alice",
+        "Arun",
+        "Bhavana",
+        "Bala",
+        "Charlie",
+        "Chitra",
+        "Dinesh",
+        "Divya",
+        "Ethan",
+        "Esha",
+        "Farhan",
+        "Fatima",
+        "George",
+        "Gita",
+        "Hari",
+        "Harini",
+        "Ishaan",
+        "Indu",
+        "John",
+        "Jaya",
+        "Kiran",
+        "Kavya",
+        "Lalit",
+        "Leela",
+        "Manoj",
+        "Meena",
+        "Naveen",
+        "Neha",
+        "Om",
+        "Oviya"
+    ],
+    "teams": [
+        {
+            "name": "Team Alpha",
+            "players": [
+                "Alice",
+                "Arun"
+            ]
+        },
+        {
+            "name": "Team Beta",
+            "players": [
+                "Bhavana",
+                "Bala"
+            ]
+        },
+        {
+            "name": "Team Delta",
+            "players": [
+                "Gowtham",
+                "Malvisha"
+            ]
+        },
+        {
+            "name": "Team Gamma",
+            "players": [
+                "Charlie",
+                "Chitra"
+            ]
+        },
+        {
+            "name": "Team Sigma",
+            "players": [
+                "Dinesh",
+                "Divya"
+            ]
+        },
+        {
+            "name": "Team 1",
+            "players": [
+                "Fatima",
+                "Ethan"
+            ]
+        }
+    ],
+    "matches": [
+        {
+            "date": "2025-06-21",
+            "team1": "Team Alpha",
+            "team2": "Team Beta",
+            "team1_points": 21,
+            "team2_points": 17,
+            "winner": "Team Alpha"
+        },
+        {
+            "date": "2025-06-22",
+            "team1": "Team Alpha",
+            "team2": "Team Delta",
+            "team1_points": 15,
+            "team2_points": 9,
+            "winner": "Team Omega"
+        },
+        {
+            "date": "2025-06-23",
+            "team1": "Team Gamma",
+            "team2": "Team Sigma",
+            "team1_points": 10,
+            "team2_points": 12,
+            "winner": "Team Sigma"
+        }
+    ],
+    "tournament": {
+        "start_date": "2025-06-24",
+        "end_date": "2025-07-10",
+        "total_matches": 8
+    }
+}
