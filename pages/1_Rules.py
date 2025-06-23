@@ -25,28 +25,91 @@ def rule(title, description):
     </div>
     """, unsafe_allow_html=True)
 
-rule("🎯 Objective",
-     "Pocket all your carrom men (white or black depending on your side) before your opponent, and finally the red queen — with proper cover.")
+rule("⏰ Reporting Time",
+     "All players must report 10 minutes before the match. Failing to show on time results in walkover.")
 
-rule("🟡 Carrom Men Colors",
-     "- **White** and **Black** pieces (9 each)\n- **Red** is the **Queen**")
+rule("🏆 Knockout Format",
+     "The entire tournament follows a knockout system. Lose once = you're out.")
 
-rule("🥇 Queen Rules",
-     "You can pocket the red queen **only after** pocketing at least one of your own pieces. You must cover the queen in your **next shot**, or it is returned to the center.")
+rule("⚫⚪ Coin Assignment",
+     "Each team gets either black or white coins. You must pocket only your coins to score.")
 
-rule("🚫 Foul Rules",
-     "- Pocketing opponent’s pieces\n- Pocketing the striker\n- Failure to cover the queen\n- Touching any piece with hand or clothing\n- Double striking")
+rule("🔴 Red Coin Rule", 
+     """
+     <ul>
+         <li>Red can be potted only after at least one of your own coins.</li>
+         <li>Red must be followed by a valid coin; else it’s placed back in center with a penalty.</li>
+     </ul>
+     """)
 
-rule("🕰️ Time Rules (if applicable)",
-     "Set a time limit per turn (e.g., 15 seconds). If the player fails to strike within the time, it is considered a foul.")
+rule("🚫 Fouls & Penalties",
+     """
+     <ul>
+         <li>Touching coins or board with body/hands is a foul.</li>
+         <li>Potting opponent’s coin directly = penalty of 1 coin.</li>
+         <li>First foul = warning, after that 1 coin penalty per foul.</li>
+     </ul>
+     """)
 
-rule("🎮 Turns",
-     "Each player takes turns to strike. If you pocket a piece, you continue. If you miss, the turn goes to the opponent.")
+rule("⏱️ Striking Time Limit",
+     """
+     <ul>
+         <li>Round 1–2: 20 sec</li>
+         <li>Round 3–5: 30 sec</li>
+         <li>Quarterfinals onward: 40 sec</li>
+         <li>Exceeding = turn cut.</li>
+     </ul>
+     """)
 
-rule("📏 Arrangement",
-     "Pieces are placed in the center circle with the red queen at the center. Alternate colors are arranged around the queen.")
+rule("🏁 Final Coin Rule",
+     "If a player pots last coin before red, opponent wins the board and gets red coin + all remaining coins as points.")
 
-rule("🥌 Striker",
-     "You must place the striker behind the baseline and hit it in a forward direction only. Bouncing off side cushions is allowed.")
+rule("🕒 Time & Points Rules",
+     """
+     <ul>
+         <li>Match ends at max time or after X boards (depends on round).</li>
+         <li>For round 1-5 time = 20 mins. For semifinals and finals time = 40 mins.</li>
+         <li>Winner = team with most points.</li>
+         <li>In case of tie at final board, team with least coins left on board wins.</li>
+     </ul>
+     """)
+
+rule("💯 Coin Points",
+     """
+     <ul>
+         <li>Regular coin = 1 point</li>
+         <li>Red coin = 3 points (Final: 5 points)</li>
+     </ul>
+     """)
+
+rule("🤝 Player Behavior",
+     "No talking during opponent’s turn. No moving chair. Referee can warn or penalize 1 coin. Referee’s decision is final.")
+
+st.markdown("## 🔄 Handling Special Cases")
+
+rule("⏳ Time Exceeds",
+     """
+     <ul>
+         <li>If time is up mid-board, stop immediately.</li>
+         <li>Winner = team with higher points.</li>
+         <li>Tie? Winner = team with least coins left on board (red not counted).</li>
+     </ul>
+     """)
+
+rule("🤔 Draw Situation (Same Points & Coins)",
+     """
+     <ul>
+         <li>1-Board Tie-Breaker Match (5 min max).</li>
+         <li>If still tied, winner decided by who pockets red first in tie-breaker.</li>
+     </ul>
+     """)
+
+rule("⚠️ Disruptions / Unforeseen Events",
+     """
+     <ul>
+         <li>Game paused.</li>
+         <li>Referee + Organizers decide whether to replay, resume, or forfeit based on situation.</li>
+     </ul>
+     """)
 
 st.success("✅ Follow these rules and have a fair, fun tournament!")

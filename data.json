@@ -68,10 +68,24 @@
             ]
         },
         {
-            "name": "Team 1",
+            "name": "team abcd",
             "players": [
-                "Fatima",
-                "Ethan"
+                "Farhan",
+                "George"
+            ]
+        },
+        {
+            "name": "team cd",
+            "players": [
+                "Gita",
+                "Indu"
+            ]
+        },
+        {
+            "name": "team a",
+            "players": [
+                "Neha",
+                "Harini"
             ]
         }
     ],
@@ -88,6 +102,14 @@
             "date": "",
             "team1": "Team Beta",
             "team2": "Team Gamma",
+            "team1_points": "",
+            "team2_points": "",
+            "winner": ""
+        },
+        {
+            "date": "",
+            "team1": "team abcd",
+            "team2": "Team Delta",
             "team1_points": "",
             "team2_points": "",
             "winner": ""
