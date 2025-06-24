@@ -36,90 +36,9 @@
         "Malvisha",
         "Ramesh"
             ],
-    "teams": [
-        {
-            "name": "Team Alpha",
-            "players": [
-                "Alice",
-                "Arun"
-            ]
-        },
-        {
-            "name": "Team Beta",
-            "players": [
-                "Bhavana",
-                "Bala"
-            ]
-        },
-        {
-            "name": "Team Delta",
-            "players": [
-                "Gowtham",
-                "Malvisha"
-            ]
-        },
-        {
-            "name": "Team Gamma",
-            "players": [
-                "Charlie",
-                "Chitra"
-            ]
-        },
-        {
-            "name": "Team Sigma",
-            "players": [
-                "Dinesh",
-                "Divya"
-            ]
-        },
-        {
-            "name": "team abcd",
-            "players": [
-                "Farhan",
-                "George"
-            ]
-        },
-        {
-            "name": "team cd",
-            "players": [
-                "Gita",
-                "Indu"
-            ]
-        },
-        {
-            "name": "team a",
-            "players": [
-                "Neha",
-                "Harini"
-            ]
-        }
-    ],
-    "matches": [
-        {
-            "date": "",
-            "team1": "Team Alpha",
-            "team2": "Team Sigma",
-            "team1_points": "",
-            "team2_points": "",
-            "winner": ""
-        },
-        {
-            "date": "",
-            "team1": "Team Beta",
-            "team2": "Team Gamma",
-            "team1_points": "",
-            "team2_points": "",
-            "winner": ""
-        },
-        {
-            "date": "",
-            "team1": "team abcd",
-            "team2": "Team Delta",
-            "team1_points": "",
-            "team2_points": "",
-            "winner": ""
-        }
-    ],
+    "teams": [],
+    
+    "matches": [],
     "tournament": {
         "start_date": "2025-06-24",
         "end_date": "2025-07-10",
