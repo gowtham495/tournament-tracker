@@ -113,3 +113,5 @@ rule("⚠️ Disruptions / Unforeseen Events",
      """)
 
 st.success("✅ Follow these rules and have a fair, fun tournament!")
+
+# this is the end of the rules page.
