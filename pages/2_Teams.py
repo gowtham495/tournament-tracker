@@ -59,18 +59,3 @@ if data["teams"]:
 else:
     st.info("No teams registered yet.")
 
-# --- Delete Team Section ---
-st.markdown("---")
-st.subheader("🗑️ Delete a Team")
-
-if data["teams"]:
-    team_names = [team["name"] for team in data["teams"]]
-    team_to_delete = st.selectbox("Select a team to delete", team_names)
-    if st.button("Delete Selected Team"):
-        data["teams"] = [team for team in data["teams"] if team["name"] != team_to_delete]
-        save_data(data)
-        st.success(f"✅ Team **{team_to_delete}** has been deleted.")
-        st.rerun()
-
-else:
-    st.info("No teams available to delete.")
