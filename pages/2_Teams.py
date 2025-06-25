@@ -58,3 +58,4 @@ if data["teams"]:
     st.dataframe(team_df, use_container_width=True)
 else:
     st.info("No teams registered yet.")
+

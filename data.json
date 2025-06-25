@@ -1,98 +1,44 @@
 {
     "players": [
-        "Alice",
-        "Arun",
-        "Bhavana",
-        "Bala",
-        "Charlie",
-        "Chitra",
+        "Abilash",
+        "Alwyn",
+        "Anoop",
+        "Balaji",
+        "Bhuvanesh",
         "Dinesh",
-        "Divya",
-        "Ethan",
-        "Esha",
-        "Farhan",
-        "Fatima",
-        "George",
-        "Gita",
-        "Hari",
-        "Harini",
-        "Ishaan",
-        "Indu",
-        "John",
-        "Jaya",
-        "Kiran",
-        "Kavya",
-        "Lalit",
-        "Leela",
+        "Gowtham",
+        "Harine",
+        "Harismita",
+        "Iyappan",
+        "Jeevagan",
+        "Jose",
+        "Kannan",
+        "Sampath",
+        "Victor",
+        "Nagaarjune",
+        "Aarti",
+        "Pradeep",
+        "Prakash",
+        "Praveen Kumar",
+        "Praveen Raju",
+        "Rajkumar",
+        "Rajasekar",
+        "Ranjani",
         "Manoj",
-        "Meena",
-        "Naveen",
-        "Neha",
-        "Om",
-        "Oviya"
-    ],
-    "teams": [
-        {
-            "name": "Team Alpha",
-            "players": [
-                "Alice",
-                "Arun"
-            ]
-        },
-        {
-            "name": "Team Beta",
-            "players": [
-                "Bhavana",
-                "Bala"
-            ]
-        },
-        {
-            "name": "Team Delta",
-            "players": [
-                "Gowtham",
-                "Malvisha"
-            ]
-        },
-        {
-            "name": "Team Gamma",
-            "players": [
-                "Charlie",
-                "Chitra"
-            ]
-        },
-        {
-            "name": "Team Sigma",
-            "players": [
-                "Dinesh",
-                "Divya"
-            ]
-        },
-        {
-            "name": "Team 1",
-            "players": [
-                "Fatima",
-                "Ethan"
-            ]
-        }
-    ],
-    "matches": [
-        {
-            "date": "",
-            "team1": "Team Alpha",
-            "team2": "Team Sigma",
-            "team1_points": "",
-            "team2_points": "",
-            "winner": ""
-        },
-        {
-            "date": "",
-            "team1": "Team Beta",
-            "team2": "Team Gamma",
-            "team1_points": "",
-            "team2_points": "",
-            "winner": ""
-        }
-    ],
+        "Sarath",
+        "Shravanth",
+        "Shruthi",
+        "Pasuvaraaj",
+        "Vidhyasagar",
+        "Vinesh",
+        "Rakesh",
+        "Pratik",
+        "Malvisha",
+        "Ramesh"
+            ],
+    "teams": [],
+    
+    "matches": [],
     "tournament": {
         "start_date": "2025-06-24",
         "end_date": "2025-07-10",
