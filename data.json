@@ -1,8 +1,8 @@
 {
     "players": [
+        "Aarti",
         "Abilash",
         "Alwyn",
-        "Anoop",
         "Balaji",
         "Bhuvanesh",
         "Dinesh",
@@ -13,35 +13,32 @@
         "Jeevagan",
         "Jose",
         "Kannan",
-        "Sampath",
-        "Victor",
+        "Malvisha",
+        "Manoj",
         "Nagaarjune",
-        "Aarti",
+        "Pasuvaraaj",
         "Pradeep",
         "Prakash",
         "Praveen Kumar",
         "Praveen Raju",
-        "Rajkumar",
         "Rajasekar",
+        "Rajkumar",
+        "Rakesh",
+        "Ramesh",
         "Ranjani",
-        "Manoj",
+        "Sampath",
         "Sarath",
         "Shravanth",
         "Shruthi",
-        "Pasuvaraaj",
+        "Victor",
         "Vidhyasagar",
-        "Vinesh",
-        "Rakesh",
-        "Pratik",
-        "Malvisha",
-        "Ramesh"
-            ],
+        "Vinesh"
+    ],
     "teams": [],
-    
     "matches": [],
     "tournament": {
-        "start_date": "2025-06-24",
-        "end_date": "2025-07-10",
+        "start_date": "2025-07-07",
+        "end_date": "2025-07-21",
         "total_matches": 8
     }
 }
