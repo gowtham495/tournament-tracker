@@ -25,7 +25,7 @@ if "generated_match" not in st.session_state:
 
 # Button press logic (no on_click)
 if len(available_teams) >= 2:
-    if st.button("🎰 Spin to Generate Match"):
+    if st.button("🎰 Spin to Generate Match", disabled=True):
         team1, team2 = random.sample(available_teams, 2)
         st.session_state.generated_match = (team1, team2)
 
