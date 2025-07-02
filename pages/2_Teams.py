@@ -31,7 +31,7 @@ else:
 
     with st.form("create_team_form"):
         team_name = st.text_input("Team Name")
-        submit = st.form_submit_button("Register Team")
+        submit = st.form_submit_button("Register Team", disabled=True)
 
         if submit:
             name_exists = any(team["name"].lower() == team_name.lower() for team in existing_teams)
