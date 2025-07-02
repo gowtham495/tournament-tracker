@@ -1,8 +1,9 @@
 import pandas as pd
 import streamlit as st
-from utils import load_data, save_data
+from utils import load_data, save_data, show_footer
 
 st.set_page_config(page_title="Register Team", layout="wide")
+st.info("🎯 Boom! Registration for 2025 is full. If you missed it... better luck next year! 😉", icon="🚫")
 st.title("👥 Register Your Team")
 
 data = load_data()
@@ -57,10 +58,18 @@ else:
 # --- Show Existing Teams in Table ---
 if data["teams"]:
     st.subheader("📋 Registered Teams")
+    
     team_df = pd.DataFrame([
         {"Team Name": team["name"], "Players": ", ".join(team["players"])}
         for team in data["teams"]
     ])
+    
+    # Set index starting from 1
+    team_df.index = team_df.index + 1
+    team_df.index.name = "#"
+    
     st.dataframe(team_df, use_container_width=True)
 else:
     st.info("No teams registered yet.")
+
+show_footer()
