@@ -1,65 +1,46 @@
 import streamlit as st
-import pandas as pd
-from collections import defaultdict
-from utils import load_data
+import json
+from utils import show_footer
 
-st.set_page_config(page_title="Leaderboard", layout="centered")
+# Load tournament data
+with open("data.json") as f:
+    data = json.load(f)
 
-st.title("🏆 Tournament Leaderboard")
+# Build team -> player mapping
+team_players_map = {
+    team["name"]: team["players"]
+    for team in data.get("teams", [])
+}
 
-# data = load_data()
-# matches = data.get("matches", [])
-# teams = data.get("teams", [])
-# all_team_names = [t["name"] for t in teams]
+# Title
+st.title("🏆 Carrom Tournament Leaderboard")
 
-# if not matches:
-#     st.info("No matches found yet. Add matches to see leaderboard.")
-# else:
-#     match_df = pd.DataFrame(matches)
+# Detect round keys dynamically
+round_keys = [k for k in data.keys() if "matches" in k]
 
-#     # Compute champion
-#     champion = match_df.iloc[-1]["winner"]
+# Sort round keys to show Round 1, Round 2, etc.
+round_keys = sorted(round_keys, key=lambda k: (0 if k == "matches" else int(k.split('_')[1])))
 
-#     # Count matches played and wins
-#     matches_played = defaultdict(int)
-#     wins = defaultdict(int)
+# Display round-wise winners
+for i, key in enumerate(round_keys, 1):
+    matches = data[key]
+    winners = []
+    
+    for match in matches:
+        winner_team = match.get("winner", "").strip()
+        if winner_team:
+            players = team_players_map.get(winner_team, ["-", "-"])
+            winners.append({
+                "Team": winner_team,
+                "Player 1": players[0],
+                "Player 2": players[1],
+            })
 
-#     for match in matches:
-#         matches_played[match["team1"]] += 1
-#         matches_played[match["team2"]] += 1
-#         wins[match["winner"]] += 1
+    st.subheader(f"Round {i} Winners")
 
-#     # Build leaderboard with status
-#     leaderboard_rows = []
-#     max_wins = max(wins.values()) if wins else 0
+    if winners:
+        st.table(winners)
+    else:
+        st.info("No winners recorded yet.")
 
-#     for team in set(matches_played.keys()).union(wins.keys()):
-#         played = matches_played[team]
-#         win_count = wins.get(team, 0)
-
-#         if team == champion:
-#             status = "🏆 Champion"
-#         elif win_count == max_wins and team != champion:
-#             status = "Finalist"
-#         elif win_count == max_wins - 1:
-#             status = "Semi-Finalist"
-#         else:
-#             status = "Eliminated"
-
-#         leaderboard_rows.append({
-#             "Team": team,
-#             "Matches Played": played,
-#             "Wins": win_count,
-#             "Status": status
-#         })
-
-#     leaderboard_df = pd.DataFrame(leaderboard_rows)
-#     leaderboard_df = leaderboard_df.sort_values(by=["Wins", "Matches Played"], ascending=False).reset_index(drop=True)
-
-#     st.dataframe(leaderboard_df, use_container_width=True)
-
-#     # Optional: Warn if some match teams are not in current teams list
-#     match_teams = set(match_df["team1"]).union(set(match_df["team2"]))
-#     unregistered = match_teams - set(all_team_names)
-#     if unregistered:
-#         st.warning(f"⚠️ Some teams in match history are not in the team list: {', '.join(unregistered)}")
+show_footer()

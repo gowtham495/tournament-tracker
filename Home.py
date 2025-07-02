@@ -1,89 +1,102 @@
 import streamlit as st
-from datetime import date, datetime
+from datetime import datetime
 from utils import load_data
+from utils import show_footer
 
-
+# --- Config ---
 st.set_page_config(
     page_title="SWE4 Tournaments",
     layout="wide",
-    initial_sidebar_state ="expanded",
+    initial_sidebar_state="expanded",
     menu_items={
-        'About': "Made with ❤️ by the SWE4 Event Management Team"
+        'About': "Crafted with ❤️ by the SWE4 Event Management Team"
     }
 )
-MAIN_LOGO_URL="images/main-logo.jpg"
-SMALL_LOGO_URL="images/small-logo.jpeg"
-st.logo(
-    MAIN_LOGO_URL,
-    icon_image=SMALL_LOGO_URL,
-    size="large"
-)
-st.image("images/carrom-board.jpg", use_container_width=True)
-st.title("Welcome to Carrom Tournament! ⛀⛁")
 
 st.markdown("""
-This app helps track match results, schedule games, and view the leaderboard — all in one place.
+    <div style="
+        background-color: #d9f9ff;
+        padding: 10px;
+        border-left: 5px solid #00bcd4;
+        font-size: 18px;
+        margin-bottom: 1rem;
+    ">
+        📣 <b>Latest Update:</b> Fixtures have been released for Round 1. Click Matches in Sidebar to view!
+    </div>
+""", unsafe_allow_html=True)
 
-🏆 Format: Knockout (Single Elimination) :sunglasses:  
-📅 Tournament Duration: July 07 – July 21
+
+st.markdown("""
+    <div style="
+        background-color: #fff0e6;
+        background-image: linear-gradient(315deg, #ffd3b6 0%, #ff6f61 74%);
+        padding: 1rem 2rem;
+        border-radius: 10px;
+        text-align: center;
+        color: #802b1a;  /* warm coral text */
+        font-size: 22px;
+        font-weight: bold;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        margin-bottom: 1rem;
+    ">
+        🙌 The stage is set, the coins are stacked — SWE4 Carrom Tournament 2025 begins now! Let the best team win! 🥇
+    </div>
+""", unsafe_allow_html=True)
+
+st.image("images/carrom-board.jpg", use_container_width=True)
+
+st.title("🎯 Welcome to SWE4 Carrom Tournament 2025 !")
+
+st.markdown("""
+> **Smashes. Strikes. Sudden wins.**  
+> Get ready to witness the ultimate knockout battle! This app helps you track results, fixtures, and who's inching closer to glory.
+""")
+
+# --- Quick Info ---
+st.markdown("""
+### 📅 Tournament Details
+
+- **Format**: Knockout (Single Elimination)  
+- **Duration**: July 07 – July 21  
+- **Venue**: SWE4 Recreation Zone  (4th Floor Canteen)
 """)
 
 st.balloons()
+
+# --- Overview Section ---
 st.subheader("📊 Tournament Overview", divider="gray")
 
-# Load from data.json
 data = load_data()
 matches = data.get("matches", [])
 players = data.get("players", [])
-tournament = data.get("tournament", {})
 teams = data.get("teams", [])
+tournament = data.get("tournament", {})
 
-# Extract details
+players_count = len(teams) * 2
 matches_played = len(matches)
-players_count = len(players)
 
-# Parse dates
-start_date = datetime.strptime(tournament.get("start_date", "2025-06-24"), "%Y-%m-%d").date()
-end_date = datetime.strptime(tournament.get("end_date", "2025-07-10"), "%Y-%m-%d").date()
+start_date = datetime.strptime(tournament.get("start_date", "2025-07-07"), "%Y-%m-%d").date()
+end_date = datetime.strptime(tournament.get("end_date", "2025-07-21"), "%Y-%m-%d").date()
 duration_days = (end_date - start_date).days
 
-# Layout: 4 metrics in a row
+# --- Metrics ---
 col1, col2, col3 = st.columns(3)
-col1.metric("🧑‍🤝‍🧑 Players", players_count)
-col2.metric("🏆 Teams", len(teams))
-col3.metric("✅ Matches", matches_played)
+col1.metric("👥 Players", players_count)
+col2.metric("💪 Teams", len(teams))
+col3.metric("🎯 Matches", matches_played)
 
+st.divider()
 
-st.divider(width="stretch")
+# --- Quick Navigation ---
+st.markdown("### 🧭 Quick Navigation")
+
 st.markdown("""
-### 🔗 Quick Navigation
+👈 Use the **sidebar** to explore:
 
-Use the **sidebar** to navigate:
-
-- 👉 View **Rules** to know the game guidelines            
-- 👉 Go to **Matches** view all matches  
-- 👉 Open **Leaderboard** to see who’s on top  
-
-
-👈 Sidebar is on the left!
+- 📌 **Rules** – Know what counts  
+- 🗓️ **Matches** – See fixtures and results  
+- 🥇 **Leaderboard** – Track who’s climbing to the top  
+- 🎮 **Live Updates** – Coming soon!
 """)
 
-st.markdown("""
-    <style>
-    .footer {
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-        background-color: white;
-        padding: 10px;
-        text-align: left;
-        font-size: 0.9rem;
-        color: gray;
-        border-top: 1px solid #f0f0f0;
-    }
-    </style>
-
-    <div class="footer">
-        Made with ❤️ by the SWE4 Event Management Team
-    </div>
-""", unsafe_allow_html=True)
+show_footer()

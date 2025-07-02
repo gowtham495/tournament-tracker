@@ -1,9 +1,10 @@
 import streamlit as st
 import random
 import time
-from utils import load_data, save_data
+from utils import load_data, save_data, show_footer
 
 st.set_page_config(page_title="Fixtures Generator", layout="centered")
+st.info("⚙️ Fixtures cooked up in our randomness lab. Pure chaos. Fair play guaranteed.", icon="🧪")
 st.title("🥊 Fixtures Generator")
 
 data = load_data()
@@ -70,3 +71,5 @@ if data["matches"]:
 
 # Optional reset
 st.divider()
+
+show_footer()
