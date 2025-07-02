@@ -1,4 +1,5 @@
 import streamlit as st
+from utils import show_footer
 
 st.set_page_config(page_title="Carrom Rules", layout="wide")
 
@@ -115,3 +116,4 @@ rule("⚠️ Disruptions / Unforeseen Events",
 st.success("✅ Follow these rules and have a fair, fun tournament!")
 
 # this is the end of the rules page.
+show_footer()
