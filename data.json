@@ -123,20 +123,28 @@
     "matches": [
         {
             "date": "07.07.2025",
-            "team1": "Aim & Win",
-            "team2": "Rocket Pocketers",
-            "team1_points": "",
-            "team2_points": "",
-            "winner": ""
+            "team1": "Pocket Wizards",
+            "team2": "Team MJ",
+            "team1_points": "16",
+            "team2_points": "0",
+            "winner": "Pocket Wizards"
         },
         {
             "date": "07.07.2025",
             "team1": "Board Busters",
             "team2": "The MisFlicks",
+            "team1_points": "0",
+            "team2_points": "16",
+            "winner": "The MisFlicks"
+        },
+        {
+            "date": "08.07.2025",
+            "team1": "Aim & Win",
+            "team2": "Rocket Pocketers",
             "team1_points": "",
             "team2_points": "",
             "winner": ""
-        },
+        },        
         {
             "date": "08.07.2025",
             "team1": "strike force",
@@ -146,7 +154,7 @@
             "winner": ""
         },
         {
-            "date": "08.07.2025",
+            "date": "09.07.2025",
             "team1": "Board Masters",
             "team2": "SWE4 Warriors",
             "team1_points": "",
@@ -160,19 +168,25 @@
             "team1_points": "",
             "team2_points": "",
             "winner": ""
-        },
-        {
-            "date": "09.07.2025",
-            "team1": "Pocket Wizards",
-            "team2": "Team MJ",
-            "team1_points": "",
-            "team2_points": "",
-            "winner": ""
         }
     ],
     "round_2_matches": [
         {
-        }
+            "date": "XX.07.2025",
+            "team1": "The MisFlicks",
+            "team2": "Pocket Wizards",
+            "team1_points": "",
+            "team2_points": "",
+            "winner": ""
+        },
+        {
+            "date": "XX.07.2025",
+            "team1": "",
+            "team2": "",
+            "team1_points": "",
+            "team2_points": "",
+            "winner": ""
+        }        
     ],    
     "tournament": {
         "start_date": "2025-07-07",
