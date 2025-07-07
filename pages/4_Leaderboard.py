@@ -1,6 +1,7 @@
 import streamlit as st
 import json
 from utils import show_footer
+import pandas as pd
 
 # Load tournament data
 with open("data.json") as f:
@@ -39,7 +40,9 @@ for i, key in enumerate(round_keys, 1):
     st.subheader(f"Round {i} Winners")
 
     if winners:
-        st.table(winners)
+        df = pd.DataFrame(winners)
+        df.index = range(1, len(df) + 1)  # Set index to start from 1
+        st.table(df)
     else:
         st.info("No winners recorded yet.")
 
