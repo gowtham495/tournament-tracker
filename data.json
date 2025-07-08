@@ -139,6 +139,14 @@
         },
         {
             "date": "08.07.2025",
+            "team1": "Board Masters",
+            "team2": "SWE4 Warriors",
+            "team1_points": "10",
+            "team2_points": "0",
+            "winner": "Board Masters"
+        },        
+        {
+            "date": "09.07.2025",
             "team1": "Aim & Win",
             "team2": "Rocket Pocketers",
             "team1_points": "",
@@ -146,17 +154,9 @@
             "winner": ""
         },        
         {
-            "date": "08.07.2025",
+            "date": "09.07.2025",
             "team1": "strike force",
             "team2": "SWE4 Titans",
-            "team1_points": "",
-            "team2_points": "",
-            "winner": ""
-        },
-        {
-            "date": "09.07.2025",
-            "team1": "Board Masters",
-            "team2": "SWE4 Warriors",
             "team1_points": "",
             "team2_points": "",
             "winner": ""
@@ -181,7 +181,7 @@
         },
         {
             "date": "XX.07.2025",
-            "team1": "",
+            "team1": "Board Masters",
             "team2": "",
             "team1_points": "",
             "team2_points": "",
