@@ -157,22 +157,22 @@
             "date": "10.07.2025",
             "team1": "Aim & Win",
             "team2": "Rocket Pocketers",
-            "team1_points": "",
-            "team2_points": "",
-            "winner": ""
+            "team1_points": "0",
+            "team2_points": "18",
+            "winner": "Rocket Pocketers"
         },        
         {
             "date": "10.07.2025",
             "team1": "strike force",
             "team2": "The Strikers",
-            "team1_points": "",
-            "team2_points": "",
-            "winner": ""
+            "team1_points": "0",
+            "team2_points": "11",
+            "winner": "The Strikers"
         }
     ],
     "round_2_matches": [
         {
-            "date": "XX.07.2025",
+            "date": "11.07.2025",
             "team1": "The MisFlicks",
             "team2": "Pocket Wizards",
             "team1_points": "",
@@ -180,13 +180,21 @@
             "winner": ""
         },
         {
-            "date": "XX.07.2025",
+            "date": "11.07.2025",
             "team1": "Board Masters",
             "team2": "Strikerholics",
             "team1_points": "",
             "team2_points": "",
             "winner": ""
-        }        
+        },
+        {
+            "date": "14.07.2025",
+            "team1": "Rocket Pocketers",
+            "team2": "The Strikers",
+            "team1_points": "",
+            "team2_points": "",
+            "winner": ""
+        }                
     ],    
     "tournament": {
         "start_date": "2025-07-07",
