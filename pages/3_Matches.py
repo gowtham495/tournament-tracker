@@ -43,4 +43,20 @@ if data["round_2_matches"]:
 else:
     st.info("No matches recorded yet.")
 
+st.subheader("Grand Finale", divider=True)
+if data["final_matches"]:
+    match_df = pd.DataFrame(data["final_matches"])
+
+    # Add Serial Number column
+    match_df.insert(0, "Match #", range(1, len(match_df) + 1))
+
+    # Display without index
+    st.dataframe(match_df, use_container_width=True, hide_index=True)
+
+    # Download without index
+    csv = match_df.to_csv(index=False).encode('utf-8')
+    st.download_button("📥 Download Grand Finale Match", csv, "carrom_matches.csv", "text/csv")
+else:
+    st.info("No matches recorded yet.")
+
 show_footer()
