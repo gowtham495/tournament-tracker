@@ -13,20 +13,20 @@ team_players_map = {
     for team in data.get("teams", [])
 }
 
-# Title
 st.title("🏆 Carrom Tournament Leaderboard")
 
-# Detect round keys dynamically
-round_keys = [k for k in data.keys() if "matches" in k]
+# Define rounds explicitly
+rounds = [
+    ("Round 1", "matches"),
+    ("Round 2", "round_2_matches"),
+    ("Grand Finale", "final_matches")
+]
 
-# Sort round keys to show Round 1, Round 2, etc.
-round_keys = sorted(round_keys, key=lambda k: (0 if k == "matches" else int(k.split('_')[1])))
-
-# Display round-wise winners
-for i, key in enumerate(round_keys, 1):
-    matches = data[key]
+# Display each round winners
+for round_name, key in rounds:
+    matches = data.get(key, [])
     winners = []
-    
+
     for match in matches:
         winner_team = match.get("winner", "").strip()
         if winner_team:
@@ -37,11 +37,11 @@ for i, key in enumerate(round_keys, 1):
                 "Player 2": players[1],
             })
 
-    st.subheader(f"Round {i} Winners")
+    st.subheader(f"{round_name} Winners")
 
     if winners:
         df = pd.DataFrame(winners)
-        df.index = range(1, len(df) + 1)  # Set index to start from 1
+        df.index = range(1, len(df) + 1)  # Index starting from 1
         st.table(df)
     else:
         st.info("No winners recorded yet.")
