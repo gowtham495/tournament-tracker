@@ -1,204 +1,214 @@
 {
-    "players": [
-        "Aarti",
-        "Abilash",
-        "Alwyn",
-        "Balaji",
-        "Bhuvanesh",
-        "Dinesh",
+  "players": [
+    "Aarti",
+    "Abilash",
+    "Alwyn",
+    "Balaji",
+    "Bhuvanesh",
+    "Dinesh",
+    "Gowtham",
+    "Harine",
+    "Harismita",
+    "Iyappan",
+    "Jeevagan",
+    "Jose",
+    "Kannan",
+    "Malvisha",
+    "Manoj",
+    "Nagaarjune",
+    "Pasuvaraaj",
+    "Pradeep",
+    "Prakash",
+    "Praveen Kumar",
+    "Praveen Raju",
+    "Rajasekar",
+    "Rajkumar",
+    "Rakesh",
+    "Ramesh",
+    "Ranjani",
+    "Sampath",
+    "Sarath",
+    "Shravanth",
+    "Shruthi",
+    "Victor",
+    "Vidhyasagar",
+    "Vinesh"
+  ],
+  "teams": [
+    {
+      "name": "SWE4 Warriors",
+      "players": [
         "Gowtham",
-        "Harine",
-        "Harismita",
-        "Iyappan",
+        "Praveen Raju"
+      ]
+    },
+    {
+      "name": "The Strikers",
+      "players": [
         "Jeevagan",
-        "Jose",
-        "Kannan",
-        "Malvisha",
-        "Manoj",
-        "Nagaarjune",
+        "Prakash"
+      ]
+    },
+    {
+      "name": "SWE4 Titans",
+      "players": [
         "Pasuvaraaj",
-        "Pradeep",
-        "Prakash",
-        "Praveen Kumar",
-        "Praveen Raju",
-        "Rajasekar",
-        "Rajkumar",
+        "Abilash"
+      ]
+    },
+    {
+      "name": "Board Busters",
+      "players": [
         "Rakesh",
-        "Ramesh",
-        "Ranjani",
-        "Sampath",
-        "Sarath",
-        "Shravanth",
-        "Shruthi",
-        "Victor",
-        "Vidhyasagar",
+        "Alwyn"
+      ]
+    },
+    {
+      "name": "Rocket Pocketers",
+      "players": [
+        "Pradeep",
+        "Shruthi"
+      ]
+    },
+    {
+      "name": "The MisFlicks",
+      "players": [
+        "Iyappan",
         "Vinesh"
-    ],
-    "teams": [
-        {
-            "name": "SWE4 Warriors",
-            "players": [
-                "Gowtham",
-                "Praveen Raju"
-            ]
-        },
-        {
-            "name": "The Strikers",
-            "players": [
-                "Jeevagan",
-                "Prakash"
-            ]
-        },
-        {
-            "name": "SWE4 Titans",
-            "players": [
-                "Pasuvaraaj",
-                "Abilash"
-            ]
-        },
-        {
-            "name": "Board Busters",
-            "players": [
-                "Rakesh",
-                "Alwyn"
-            ]
-        },
-        {
-            "name": "Rocket Pocketers",
-            "players": [
-                "Pradeep",
-                "Shruthi"
-            ]
-        },
-        {
-            "name": "The MisFlicks",
-            "players": [
-                "Iyappan",
-                "Vinesh"
-            ]
-        },
-        {
-            "name": "Board Masters",
-            "players": [
-                "Sarath",
-                "Victor"
-            ]
-        },
-        {
-            "name": "Strikerholics",
-            "players": [
-                "Shravanth",
-                "Praveen Kumar"
-            ]
-        },
-        {
-            "name": "Pocket Wizards",
-            "players": [
-                "Nagaarjune",
-                "Sampath"
-            ]
-        },
-        {
-            "name": "Team MJ",
-            "players": [
-                "Malvisha",
-                "Jose"
-            ]
-        },
-        {
-            "name": "strike force",
-            "players": [
-                "Rajkumar",
-                "Manoj"
-            ]
-        },
-        {
-            "name": "Aim & Win",
-            "players": [
-                "Harine",
-                "Rajasekar"
-            ]
-        }
-    ],
-    "matches": [
-        {
-            "date": "07.07.2025",
-            "team1": "Pocket Wizards",
-            "team2": "Team MJ",
-            "team1_points": "16",
-            "team2_points": "0",
-            "winner": "Pocket Wizards"
-        },
-        {
-            "date": "07.07.2025",
-            "team1": "Board Busters",
-            "team2": "The MisFlicks",
-            "team1_points": "0",
-            "team2_points": "16",
-            "winner": "The MisFlicks"
-        },
-        {
-            "date": "08.07.2025",
-            "team1": "Board Masters",
-            "team2": "SWE4 Warriors",
-            "team1_points": "10",
-            "team2_points": "0",
-            "winner": "Board Masters"
-        },
-        {
-            "date": "09.07.2025",
-            "team1": "Strikerholics",
-            "team2": "SWE4 Titans",
-            "team1_points": "12",
-            "team2_points": "0",
-            "winner": "Strikerholics"
-        },                
-        {
-            "date": "10.07.2025",
-            "team1": "Aim & Win",
-            "team2": "Rocket Pocketers",
-            "team1_points": "0",
-            "team2_points": "18",
-            "winner": "Rocket Pocketers"
-        },        
-        {
-            "date": "10.07.2025",
-            "team1": "strike force",
-            "team2": "The Strikers",
-            "team1_points": "0",
-            "team2_points": "11",
-            "winner": "The Strikers"
-        }
-    ],
-    "round_2_matches": [
-        {
-            "date": "11.07.2025",
-            "team1": "The MisFlicks",
-            "team2": "Pocket Wizards",
-            "team1_points": "",
-            "team2_points": "",
-            "winner": ""
-        },
-        {
-            "date": "11.07.2025",
-            "team1": "Board Masters",
-            "team2": "Strikerholics",
-            "team1_points": "",
-            "team2_points": "",
-            "winner": ""
-        },
-        {
-            "date": "14.07.2025",
-            "team1": "Rocket Pocketers",
-            "team2": "The Strikers",
-            "team1_points": "",
-            "team2_points": "",
-            "winner": ""
-        }                
-    ],    
-    "tournament": {
-        "start_date": "2025-07-07",
-        "end_date": "2025-07-21",
-        "total_matches": 8
+      ]
+    },
+    {
+      "name": "Board Masters",
+      "players": [
+        "Sarath",
+        "Victor"
+      ]
+    },
+    {
+      "name": "Strikerholics",
+      "players": [
+        "Shravanth",
+        "Praveen Kumar"
+      ]
+    },
+    {
+      "name": "Pocket Wizards",
+      "players": [
+        "Nagaarjune",
+        "Sampath"
+      ]
+    },
+    {
+      "name": "Team MJ",
+      "players": [
+        "Malvisha",
+        "Jose"
+      ]
+    },
+    {
+      "name": "strike force",
+      "players": [
+        "Rajkumar",
+        "Manoj"
+      ]
+    },
+    {
+      "name": "Aim & Win",
+      "players": [
+        "Harine",
+        "Rajasekar"
+      ]
     }
+  ],
+  "matches": [
+    {
+      "date": "07.07.2025",
+      "team1": "Pocket Wizards",
+      "team2": "Team MJ",
+      "team1_points": "16",
+      "team2_points": "0",
+      "winner": "Pocket Wizards"
+    },
+    {
+      "date": "07.07.2025",
+      "team1": "Board Busters",
+      "team2": "The MisFlicks",
+      "team1_points": "0",
+      "team2_points": "16",
+      "winner": "The MisFlicks"
+    },
+    {
+      "date": "08.07.2025",
+      "team1": "Board Masters",
+      "team2": "SWE4 Warriors",
+      "team1_points": "10",
+      "team2_points": "0",
+      "winner": "Board Masters"
+    },
+    {
+      "date": "09.07.2025",
+      "team1": "Strikerholics",
+      "team2": "SWE4 Titans",
+      "team1_points": "12",
+      "team2_points": "0",
+      "winner": "Strikerholics"
+    },
+    {
+      "date": "10.07.2025",
+      "team1": "Aim & Win",
+      "team2": "Rocket Pocketers",
+      "team1_points": "0",
+      "team2_points": "18",
+      "winner": "Rocket Pocketers"
+    },
+    {
+      "date": "10.07.2025",
+      "team1": "strike force",
+      "team2": "The Strikers",
+      "team1_points": "0",
+      "team2_points": "12",
+      "winner": "The Strikers"
+    }
+  ],
+  "round_2_matches": [
+    {
+      "date": "11.07.2025",
+      "team1": "The MisFlicks",
+      "team2": "Pocket Wizards",
+      "team1_points": "16",
+      "team2_points": "2",
+      "winner": "The MisFlicks"
+    },
+    {
+      "date": "14.07.2025",
+      "team1": "Board Masters",
+      "team2": "Strikerholics",
+      "team1_points": "",
+      "team2_points": "",
+      "winner": ""
+    },
+    {
+      "date": "14.07.2025",
+      "team1": "Rocket Pocketers",
+      "team2": "The Strikers",
+      "team1_points": "",
+      "team2_points": "",
+      "winner": ""
+    }
+  ],
+  "final_matches": [
+    {
+      "date": "XY.07.2025",
+      "team1": "",
+      "team2": "",
+      "team1_points": "",
+      "team2_points": "",
+      "winner": ""
+    }
+  ],
+  "tournament": {
+    "start_date": "2025-07-07",
+    "end_date": "2025-07-21",
+    "total_matches": 8
+  }
 }
