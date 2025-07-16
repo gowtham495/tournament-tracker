@@ -180,22 +180,48 @@
       "winner": "The MisFlicks"
     },
     {
-      "date": "14.07.2025",
+      "date": "15.07.2025",
       "team1": "Board Masters",
       "team2": "Strikerholics",
+      "team1_points": "20",
+      "team2_points": "0",
+      "winner": "Board Masters"
+    },
+    {
+      "date": "15.07.2025",
+      "team1": "Rocket Pocketers",
+      "team2": "The Strikers",
+      "team1_points": "18",
+      "team2_points": "0",
+      "winner": "Rocket Pocketers"
+    }
+  ],
+  "semi_final_matches": [
+    {
+      "date": "16.07.2025",
+      "team1": "The MisFlicks",
+      "team2": "Rocket Pocketers",
+      "team1_points": "9",
+      "team2_points": "7",
+      "winner": "The MisFlicks"
+    },
+    {
+      "date": "17.07.2025",
+      "team1": "Board Masters",
+      "team2": "The MisFlicks",
       "team1_points": "",
       "team2_points": "",
       "winner": ""
     },
     {
-      "date": "14.07.2025",
+      "date": "17.07.2025",
       "team1": "Rocket Pocketers",
-      "team2": "The Strikers",
+      "team2": "Board Masters",
       "team1_points": "",
       "team2_points": "",
       "winner": ""
     }
-  ],
+  ],  
   "final_matches": [
     {
       "date": "XY.07.2025",
