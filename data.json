@@ -217,16 +217,16 @@
       "date": "22.07.2025",
       "team1": "Rocket Pocketers",
       "team2": "Board Masters",
-      "team1_points": "",
-      "team2_points": "",
-      "winner": ""
+      "team1_points": "7",
+      "team2_points": "7",
+      "winner": "TIE"
     }
   ],  
   "final_matches": [
     {
-      "date": "XY.07.2025",
-      "team1": "",
-      "team2": "",
+      "date": "23.07.2025",
+      "team1": "Rocket Pocketers",
+      "team2": "The MisFlicks",
       "team1_points": "",
       "team2_points": "",
       "winner": ""
@@ -234,7 +234,7 @@
   ],
   "tournament": {
     "start_date": "2025-07-07",
-    "end_date": "2025-07-21",
+    "end_date": "2025-07-23",
     "total_matches": 8
   }
 }
