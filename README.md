@@ -104,18 +104,11 @@ Add screenshots of:
 
 ---
 
-## 📄 License
-
-This project is licensed under the MIT License. Feel free to use and modify it as you like.
-
-
----
-
 ## 👥 Contributors
 
 Made with ❤️ by:
 
 - [Gowtham](https://github.com/gowtham495)
-- [Malvisha]([https://github.com/gowtham495](https://github.com/Malvisha))
+- [Malvisha](https://github.com/Malvisha)
 
 If you contributed to this project, feel free to open a PR to add your name here!
