@@ -26,7 +26,7 @@ with st.form("feedback_form"):
     rating = st.slider("Rate your experience (1 - Poor, 5 - Excellent)", 1, 5, 4)
     what_went_good = st.text_area("✅ What you enjoyed ?", height=100)
     what_to_improve = st.text_area("⚠️ What needs to be improved?", height=100)
-    submitted = st.form_submit_button("Submit", disabled=True)
+    submitted = st.form_submit_button("Submit", disabled=False)
 
     if submitted:
         if not name.strip() or not what_went_good.strip():
