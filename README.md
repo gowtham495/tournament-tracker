@@ -74,17 +74,6 @@ Then open [http://localhost:8501](http://localhost:8501) in your browser.
 
 ---
 
-## 📷 Screenshots
-
-Add screenshots of:
-- Main menu
-- Team registration form
-- Match entry
-- Leaderboard
-- Feedback form
-
----
-
 ## 💡 Future Improvements
 
 - Persistent storage (SQLite/PostgreSQL)
