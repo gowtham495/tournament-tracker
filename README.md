@@ -73,6 +73,13 @@ streamlit run app.py
 Then open [http://localhost:8501](http://localhost:8501) in your browser.
 
 ---
+### 🖼️ Streamlit UI Snapshots
+<img width="940" height="404" alt="image" src="https://github.com/user-attachments/assets/26a23504-e559-4fcc-ac5b-588bf057ab80" />
+<img width="940" height="457" alt="image" src="https://github.com/user-attachments/assets/bb8be801-cb14-4e07-b04b-4ff0a142e674" />
+<img width="940" height="470" alt="image" src="https://github.com/user-attachments/assets/ea9fe74a-44ee-4469-b7fd-6944662ed203" />
+<img width="940" height="634" alt="image" src="https://github.com/user-attachments/assets/656f368b-672f-4e36-8d64-c14c46816165" />
+
+---
 
 ## 💡 Future Improvements
 
